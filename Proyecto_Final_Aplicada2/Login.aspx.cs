@@ -15,7 +15,7 @@ namespace Proyecto_Final_Aplicada2
 
         }
 
-        protected void buttonRegitrarse_Click(object sender, EventArgs e)
+        protected void ButtonRegitrarse_Click(object sender, EventArgs e)
         {
             if (!Validar())
             {
@@ -65,7 +65,7 @@ namespace Proyecto_Final_Aplicada2
             };
         }
 
-        protected void buttonIniciarSesion_Click(object sender, EventArgs e)
+        protected void ButtonIniciarSesion_Click(object sender, EventArgs e)
         {
             Usuario usuario = LlenaClaseLogin();
             List<Usuario> lista = new BLL.RepositorioBase<Usuario>().GetList(x=>true);

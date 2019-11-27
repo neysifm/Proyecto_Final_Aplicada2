@@ -135,6 +135,10 @@
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Login.aspx" />
     <Content Include="loginstyle.css" />
+    <Content Include="Registros\RegistroCliente.aspx" />
+    <Content Include="Registros\RegistroEmpleado.aspx" />
+    <Content Include="Registros\RegistroObra.aspx" />
+    <Content Include="Registros\RegistroProveedor.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -204,6 +208,34 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registros\RegistroCliente.aspx.cs">
+      <DependentUpon>RegistroCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registros\RegistroCliente.aspx.designer.cs">
+      <DependentUpon>RegistroCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\RegistroEmpleado.aspx.cs">
+      <DependentUpon>RegistroEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registros\RegistroEmpleado.aspx.designer.cs">
+      <DependentUpon>RegistroEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\RegistroObra.aspx.cs">
+      <DependentUpon>RegistroObra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registros\RegistroObra.aspx.designer.cs">
+      <DependentUpon>RegistroObra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\RegistroProveedor.aspx.cs">
+      <DependentUpon>RegistroProveedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registros\RegistroProveedor.aspx.designer.cs">
+      <DependentUpon>RegistroProveedor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -230,7 +262,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Consultas\Reportes\" />
-    <Folder Include="Registros\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
