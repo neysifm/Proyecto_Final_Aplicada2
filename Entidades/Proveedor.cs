@@ -16,5 +16,23 @@ namespace Entidades
         public string Direccion { get; set; }
         public string Telefono { get; set; }
         public string Email { get; set; }
+
+        public Proveedor(int proveedorID, string nombre, string direccion, string telefono, string email)
+        {
+            ProveedorID = proveedorID;
+            Nombre = nombre ?? throw new ArgumentNullException(nameof(nombre));
+            Direccion = direccion ?? throw new ArgumentNullException(nameof(direccion));
+            Telefono = telefono ?? throw new ArgumentNullException(nameof(telefono));
+            Email = email ?? throw new ArgumentNullException(nameof(email));
+        }
+
+        public Proveedor()
+        {
+            ProveedorID = 0;
+            Nombre = String.Empty;
+            Direccion = String.Empty;
+            Telefono = String.Empty;
+            Email = String.Empty;
+        }
     }
 }
